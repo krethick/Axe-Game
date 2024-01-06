@@ -1,31 +1,16 @@
 #include "raylib.h"
 int main()
 {
-   // Debugging is the process of finding and removing errors.
-   // The dark red dot is the break point 
-   // We can continue to the next line by clicking the step into.
-   // We can use the continue or f5 to move towards the next breakpoint.
-   // Has Garbage data and ways to initialize.
+    // Equal to operator '=='
+    // 5 == 9 (The numbers are the operands wheras the numbers are operators) 
+   // Expression is an operator combined with operands i.e Returns a value
 
-   /*
-     Initialization by Assignment
-     Example:
-
-     float root_beer;     UNINITIALIZED
-     root_beer = 1.99;
- 
-     float root_beer = 1.99 INITIALIZED
-
-     Braced Initialization
-
-     double cheese_burger{5.99}; INITIALIZED
-     double cheese_burger{};  INITIALIZED TO 0
-     
-   */
-
-    float root_beer = 1.99;
-    double cheese_burger{5.99};
-    bool shouldHaveLuch{};
+    bool equal{4 == 9};
+    bool notEqual{4!=9};
+    bool less{4<9};
+    bool greater{4>9};
+    bool lessEqual{4<=9};
+    bool greatEqual{4>=9};
 
     int width = 350;
     int height = 200;
