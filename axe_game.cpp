@@ -21,7 +21,7 @@ int main()
     // If True the statement gets executed.
     // After that 100 gets decremented to 1.
     // This process continues until milesToDisneyland becomes 0.
-    cout<<"Are we there yet";
+    cout<<" \n Are we there yet";
     milesToDisneyland = milesToDisneyland - 1;
    }
     
