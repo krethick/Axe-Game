@@ -1,9 +1,14 @@
 #include "raylib.h"
 int main()
 {
-    // Equal to operator '=='
-    // 5 == 9 (The numbers are the operands wheras the numbers are operators) 
-   // Expression is an operator combined with operands i.e Returns a value
+    // Keep the Window Open
+    // Loop means repeating a code until the condition is met.
+    // We call this loop condition as Boolean Condition
+    // Loop executes if true
+    /*
+      expression -> condition -> true -> Statement (Body)
+      again goes back to the expression until the condition is false.
+    */
 
     bool equal{4 == 9};
     bool notEqual{4!=9};
