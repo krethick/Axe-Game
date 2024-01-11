@@ -1,4 +1,6 @@
 #include "raylib.h"
+#include<iostream>
+using namespace std;
 int main()
 {
     // Keep the Window Open
@@ -9,15 +11,18 @@ int main()
       expression -> condition -> true -> Statement (Body)
       again goes back to the expression until the condition is false.
     */
-
-    bool equal{4 == 9};
-    bool notEqual{4!=9};
-    bool less{4<9};
-    bool greater{4>9};
-    bool lessEqual{4<=9};
-    bool greatEqual{4>=9};
-
-    int width = 350;
-    int height = 200;
-    InitWindow(width,height, "Krethick");
+     
+   // Initial value of milesToDisneyland is 100;
+   int milesToDisneyland {100};
+   // Afer that the loop is implemented.
+   // Eg milesToDisneyland 100 > 0
+   while(milesToDisneyland > 0 )
+   {
+    // If True the statement gets executed.
+    // After that 100 gets decremented to 1.
+    // This process continues until milesToDisneyland becomes 0.
+    cout<<"Are we there yet";
+    milesToDisneyland = milesToDisneyland - 1;
+   }
+    
 }
