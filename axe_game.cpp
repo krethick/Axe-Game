@@ -4,14 +4,11 @@ using namespace std;
 int main()
 {
    /*
-     Why is braced initialisation ?
-     -> It is a uniform method for initializing data in C++ 11
+    LOGICAL AND OPERATOR
+      * To check if both of two conditions are true. 
 
-     What is frame?
-     -> It is an rendered image presented in the player's screen
-     
-     What is frame rate?
-     -> It is a measurement of how quickly a number of frames appears within a second.
+    circle_x < 350 is the extreme right as width is the x-axis
+    circle_x > 0 is the extreme left as width is the x-axis
    */
 
    // Window Dimensions
@@ -35,12 +32,12 @@ int main()
 
     DrawCircle(circle_x,circle_y,25,BLUE);
     
-    if(IsKeyDown(KEY_D))
+    if(IsKeyDown(KEY_D) && circle_x < 350) // circle_x < 350 (it is the extreme right) sets a boundary where the circle can't cross even further.
     {
         circle_x = circle_x + 10;
     }
 
-    if(IsKeyDown(KEY_A))
+    if(IsKeyDown(KEY_A) && circle_x > 0)// circle_y > 0 (it is the extreme left). sets a boundary where the circle can't cross even further.
     {
         circle_x = circle_x - 10;
     }
