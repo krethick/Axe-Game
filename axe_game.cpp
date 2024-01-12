@@ -4,16 +4,18 @@ using namespace std;
 int main()
 {
    
-   // Draw a Circle
+   // Moving a Circle
    /*
-    i)Raylib has a function called Draw Circle.
-    ii)Draw Circle takes three inputs centerX, centerY and radius.
-    the color input takes it as raylib color.
-    Radius is half of a cricle's diameter
-   iii) The centerX and centerY are X and Y coordinates stored in pixles.
-    iv) We used half of the windows width and half of the windows height to place the 
-        cirlce in the center.
+      Usage of if statement and how it can be used to check boolean expression.
+      Run code under certain conditions
+      Detect key presses.
+       -> We further use the keys to move the circle.
+       IsKeyDown checks to see if a key is pressed
+       Input is int.
+       Example if we want to use the D key we can use KEY_D.
    */ 
+   
+   // Window Dimensions 
    int width;
    int height;
    // Set the width size
