@@ -4,16 +4,12 @@ using namespace std;
 int main()
 {
    /*
-    DRAWING THE AXE
+     LOGICAL OR OPERATOR ||
+      OR is like addition 0+1 = 1; 
 
-    DrawRectangle(posX, posY, height, color)
-     -> posX, posY, width and height are ints.
-     -> color is a raylib color
-     -> posX and posY are the upper left corner
-
-     Compound Assignment Operator
-     -> axe_y = axe_y + 10; Normal Operator
-     -> axe_y += 10; Compound Assignment Operator
+      direction = -direction;
+      -> If direction is +10 in the beginning it changes to -10
+      -> If direction is -10 in the beginning it changes to +10
    */ 
 
    // Window Dimensions
@@ -34,6 +30,8 @@ int main()
    // Axe(Rectangle) coordinates
    int axe_x{400};
    int axe_y{0};
+
+   int direction{10};
    
    // SetTargetFPS is used to control the framerate at which your game updates and renders
    SetTargetFPS(60);
@@ -48,7 +46,13 @@ int main()
     DrawRectangle(axe_x,axe_y,rectangle_width,rectangle_height,RED);
 
     // Move the axe towards y-axis or downwards
-    axe_y += 10; // Compound Assignment Operator
+    axe_y += direction; // Compound Assignment Operator
+
+    // 450 is the height of the screen window
+    if(axe_y > 450 || axe_y < 0)
+    {
+      direction = -direction; // negates the current value 
+    }
     
     if(IsKeyDown(KEY_D) && circle_x < 350) // circle_x < 350 (it is the extreme right) sets a boundary where the circle can't cross even further.
     {
