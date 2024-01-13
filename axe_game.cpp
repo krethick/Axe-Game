@@ -10,6 +10,8 @@ int main()
       direction = -direction;
       -> If direction is +10 in the beginning it changes to -10
       -> If direction is -10 in the beginning it changes to +10
+
+      axe_y > 450 goes downwards.
    */ 
 
    // Window Dimensions
@@ -34,7 +36,7 @@ int main()
    int direction{10};
    
    // SetTargetFPS is used to control the framerate at which your game updates and renders
-   SetTargetFPS(60);
+   SetTargetFPS(60);axe_y > 450
    while (WindowShouldClose() != true) // Until this action execued, the screen stays open. 
    {
     BeginDrawing(); // AIDS IN SETUP AND TEARDOWN OF THE CANVAS (Does the heavy lifting)
@@ -49,7 +51,7 @@ int main()
     axe_y += direction; // Compound Assignment Operator
 
     // 450 is the height of the screen window
-    if(axe_y > 450 || axe_y < 0)
+    if( || axe_y < 0)
     {
       direction = -direction; // negates the current value 
     }
